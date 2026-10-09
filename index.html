@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Organizador de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Organizador de tarefas</h1>
+
+    <div class="caixas">
+
+        <div class="caixa">
+            <h2>Cadastrar tarefas</h2>
+
+            <input
+                type="text"
+                id="materia"
+                placeholder="Matéria"
+            >
+
+            <input
+                type="text"
+                id="tarefa"
+                placeholder="Tarefa"
+            >
+
+            <button id="cadastrar">Cadastrar</button>
+        </div>
+
+
+        <div class="caixa">
+            <h2>Resumo</h2>
+
+            <p>
+                Total de tarefas:
+                <span id="total">0</span>
+            </p>
+
+            <p>
+                Tarefas concluídas:
+                <span id="concluidas">0</span>
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="lista">
+
+        <h2>Minhas tarefas</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Tarefa</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela"></tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
